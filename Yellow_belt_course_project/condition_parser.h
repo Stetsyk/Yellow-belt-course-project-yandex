@@ -1,14 +1,12 @@
-//
-//  condition_parser.hpp
-//  Yellow_belt_course_project
-//
-//  Created by Oleksii Stetsyk on 10/19/19.
-//  Copyright © 2019 Oleksii Stetsyk. All rights reserved.
-//
+#pragma once
 
-#ifndef condition_parser_hpp
-#define condition_parser_hpp
+#include "node.h"
 
-#include <stdio.h>
+#include <memory>
+#include <iostream>
 
-#endif /* condition_parser_hpp */
+using namespace std;
+
+shared_ptr<Node> ParseCondition(istream& is);
+
+void TestParseCondition();

@@ -1,14 +1,22 @@
-//
-//  token.hpp
-//  Yellow_belt_course_project
-//
-//  Created by Oleksii Stetsyk on 10/19/19.
-//  Copyright © 2019 Oleksii Stetsyk. All rights reserved.
-//
+#pragma once
 
-#ifndef token_hpp
-#define token_hpp
+#include <sstream>
+#include <vector>
+using namespace std;
 
-#include <stdio.h>
+enum class TokenType {
+  DATE,
+  EVENT,
+  COLUMN,
+  LOGICAL_OP,
+  COMPARE_OP,
+  PAREN_LEFT,
+  PAREN_RIGHT,
+};
 
-#endif /* token_hpp */
+struct Token {
+  const string value;
+  const TokenType type;
+};
+
+vector<Token> Tokenize(istream& cl);

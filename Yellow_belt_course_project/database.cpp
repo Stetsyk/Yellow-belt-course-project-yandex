@@ -5,5 +5,4 @@
 //  Created by Oleksii Stetsyk on 10/19/19.
 //  Copyright © 2019 Oleksii Stetsyk. All rights reserved.
 //
-
-#include "database.hpp"
+#include "database.h"
